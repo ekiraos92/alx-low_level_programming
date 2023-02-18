@@ -1,9 +1,9 @@
 #include <unistd.h>
 
 /**
- * main - Print "and that piece of art is useful" - Dora Korpar, 2015-10-19",
- *		followed by anew lint, to the standard error.
- * Returns: will return 1
+ * main - Prints message
+ *
+ * Return: will return 1
  *
  */
 int main(void)
