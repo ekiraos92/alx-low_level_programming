@@ -8,24 +8,25 @@
  */
 int main(void)
 {
-	int i = 0;
-	int j = 0;
+	int i;
+	int j;
 
-	while (i <= 9)
+	for (i = 0; i < 10; i++)
 	{
-		j = i + 1;
-		while (j <= 9)
-	{
-		putchar(i + '0');
-		putchar(',');
-		putchar(' ');
-		putchar(j + '0');
-		j++;
+		for (j = 1; j < 10; j++)
+		{
+			if (i < j && i != j)
+			{
+				putchar(i + '0');
+				putchar(j + '0');
+				if (i + j != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
 	}
-	i++;
-	}
-
 	putchar('\n');
 	return (0);
-
 }
