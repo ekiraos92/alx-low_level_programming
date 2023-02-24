@@ -2,6 +2,7 @@
 
 /**
  * print_times_table - prints the table
+ * starting with 0
  * @n: parameter
  */
 
@@ -18,10 +19,11 @@ void print_times_table(int n)
 	{
 	_putchar(',');
 	_putchar(' ');
+
 	c = a * b;
 	if (c <= 99)
 	_putchar(' ');
-	if (c >= 9)
+	if (c <= 9)
 	_putchar(' ');
 	if (c >= 100)
 	{
