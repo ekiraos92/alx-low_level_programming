@@ -1,24 +1,25 @@
 #include <stdio.h>
 
-/*main - performs function
+/**
+ * main - performs function
  *
  * Return: always 0
  */
-int main(void) 
+int main(void)
 {
 	int i;
 	int sum = 0;
 
 	sum = 0;
 
-	for (int i = 1; i < 1024; i++) 
+	for (i = 0; i < 1024; i++)
 	{
-	if (i % 3 == 0 || i % 5 == 0) 
+	if ((i % 3 == 0) || (i % 5 == 0))
 	{
-	sum += i;
+	sum = sum + i;
 	}
 	}
 	printf("%d\n", sum);
-	return 0;
+	return (0);
 }
 
