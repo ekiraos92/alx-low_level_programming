@@ -3,8 +3,9 @@
 /**
  * print_numbers - print numbers from 0 to 9
  * Return: always 0)
+ *
  */
-void print_number(void)
+void print_numbers(void)
 {
 	int x;
 
